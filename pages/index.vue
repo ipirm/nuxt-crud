@@ -93,12 +93,10 @@
                 }
             },
             prevPage() {
-                let page = parseInt(this.$route.query.page);
-                page === 1 ? alert('first page') : this.$router.push({query: {page: `${--page}`}});
+                this.page === 1 ? alert('first page') : this.$router.push({query: {page: `${--(this.page)}`}});
             },
             nextPage() {
-                let page = parseInt(this.$route.query.page);
-                page === this.paginationPages ? alert('last page') : this.$router.push({query: {page: `${++page}`}});
+                this.page === this.paginationPages ? alert('last page') : this.$router.push({query: {page: `${++(this.page)}`}});
             }
         },
         computed: {
@@ -106,9 +104,11 @@
             ...mapState('cities', ['paginationPages']),
             ...mapState('cities', ['CitiesCount']),
             citiesPaginate() {
-                let page = parseInt(this.$route.query.page);
-                page += page;
-                return this.cities.slice(page - 2, page)
+                (this.page) += this.page;
+                return this.cities.slice(this.page - 2, this.page)
+            },
+            page(){
+                return parseInt(this.$route.query.page)
             }
         }
     }
