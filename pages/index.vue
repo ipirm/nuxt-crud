@@ -85,7 +85,7 @@
                 this.$router.push({query: {page: index}});
             },
             addItem() {
-                if (Object.values(this.body).filter(item => item.length === 0).length === 0) {
+                if (Object.values(this.body).filter(item => item.length).length) {
                     this.$store.dispatch('cities/addItem', {...this.body, ...{id: this.cities.length + 1}});
                     this.$store.commit('cities/PAGINATION_PAGES');
                 } else {
