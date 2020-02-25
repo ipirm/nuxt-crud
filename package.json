@@ -1,0 +1,25 @@
+{
+  "name": "test-roman",
+  "version": "1.0.0",
+  "description": "My doozie Nuxt.js project",
+  "author": "Ilham",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "generategit": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages"
+  },
+  "dependencies": {
+    "bootstrap-scss": "^4.4.1",
+    "cross-env": "^7.0.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^8.0.2"
+  }
+}

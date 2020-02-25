@@ -1,0 +1,44 @@
+[
+  {
+    "id":"1",
+    "name":"Baku",
+    "temperature":"10",
+    "wind":"10 km/h",
+    "pressure":"10 Pa"
+  },
+  {
+    "id":"2",
+    "name":"London",
+    "temperature":"10",
+    "wind":"10 km/h",
+    "pressure":"10 Pa"
+  },
+  {
+    "id":"3",
+    "name":"Moscow",
+    "temperature":"10",
+    "wind":"10 km/h",
+    "pressure":"10 Pa"
+  },
+  {
+    "id":"4",
+    "name":"New York",
+    "temperature":"10",
+    "wind":"10 km/h",
+    "pressure":"10 Pa"
+  },
+  {
+    "id":"5",
+    "name":"Samara",
+    "temperature":"10",
+    "wind":"10 km/h",
+    "pressure":"10 Pa"
+  },
+  {
+    "id":"6",
+    "name":"Perm",
+    "temperature":"10",
+    "wind":"10 km/h",
+    "pressure":"10 Pa"
+  }
+]
